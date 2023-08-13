@@ -189,4 +189,4 @@ CORS_ORIGIN_WHITELIST = [
 
 AUTH_USER_MODEL = 'account.User'
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
