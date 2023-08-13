@@ -8,3 +8,4 @@ redis
 Pillow
 psycopg2-binary
 pytelegrambotapi
+django-cors-headers
