@@ -144,6 +144,9 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+import os
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 from datetime import timedelta
 
