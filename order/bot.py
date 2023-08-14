@@ -17,7 +17,7 @@ def start_message(message):
 def send_excel(file_path, user):
     f = open(file_path,"rb")
 
-    bot.send_document(config('USER_ID'), f, caption=f'Филиал: {user.username}\nАдресс аптеки: {user.address}\nОтправитель: {user.first_name} {user.last_name}\nНомер телефона {user.telephone_name}')
+    bot.send_document(config('USER_ID'), f, caption=f'Филиал: {user.username}\nАдресс аптеки: {user.address}\nОтправитель: {user.first_name} {user.last_name}\nНомер телефона {user.telephone_number}')
 
 
 if __name__ == '__main__':
