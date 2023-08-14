@@ -9,3 +9,7 @@ Pillow
 psycopg2-binary
 pytelegrambotapi
 django-cors-headers
+pandas 
+openpyxl 
+xlsxwriter 
+xlrd 
