@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.125.245.208', 'localhost' , '127.0.0.1']
+ALLOWED_HOSTS = ['34.125.245.208', 'localhost' , '127.0.0.1', 'www.farm-service-kg.com', 'farm-service-kg.com']
 
 
 # Application definition
