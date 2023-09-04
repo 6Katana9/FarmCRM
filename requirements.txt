@@ -13,3 +13,4 @@ pandas
 openpyxl 
 xlsxwriter 
 xlrd 
+django-import-export

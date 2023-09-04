@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_yasg',
     'corsheaders',
+    'import_export',
 
     #apps
     'account',
@@ -170,8 +171,7 @@ CORS_ALLOW_ORIGINS = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:5500', 
     'https://www.thunderclient.com',
-    'https://pharmacy-44398.web.app/',
-    'https://pharmacy-roan.vercel.app/'
+    'https://farm-service.vercel.app',
 ]
 
 CORS_ORIGIN_WHITELIST = [
@@ -182,8 +182,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:8000',
     'http://127.0.0.1:5500', 
     'https://www.thunderclient.com',
-    'https://pharmacy-44398.web.app/',
-    'https://pharmacy-roan.vercel.app/'
+    'https://farm-service.vercel.app',
 ]
 
 AUTH_USER_MODEL = 'account.User'

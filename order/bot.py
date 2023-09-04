@@ -14,9 +14,9 @@ def start_message(message):
     bot.send_message(message.chat.id, 'Здравствуйте, я бот, который будет отправлять вам файл с запросами на лекарство')
 
 
-def send_excel(file_path, user):
+def send_excel(file_path, user, sum_price):
     f = open(file_path,"rb")
-    bot.send_document(config('USER_ID'), f, caption=f'Филиал: {user.username}\nАдресс аптеки: {user.address}\nОтправитель: {user.first_name} {user.last_name}\nНомер телефона {user.telephone_number}')
+    bot.send_document(config('USER_ID'), f, caption=f'Филиал: {user.username}\nАдресс аптеки: {user.address}\nОтправитель: {user.first_name} {user.last_name}\nНомер телефона: {user.telephone_number}\nЗаказ вышел на: {sum_price}')
 
 
 if __name__ == '__main__':
