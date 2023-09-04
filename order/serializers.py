@@ -42,10 +42,10 @@ class OrderSerializer(serializers.ModelSerializer):
             item_quantity.append(item['quantity'])
             item_measure.append(item['medicine'].measure)
             item_price.append(item['medicine'].price)
-            item_sum.append(item['medicine'].price_without_discount * item['quantity'])
+            item_sum.append(item['medicine'].price * item['quantity'])
             item_manufacturer.append(item['medicine'].manufacturer)
             item_expiration_date.append(item['medicine'].expiration_date)
-            total_sum += item['medicine'].price_without_discount * item['quantity']
+            total_sum += item['medicine'].price * item['quantity']
 
         OrderItem.objects.bulk_create(order_items)
         order.total_sum = total_sum
